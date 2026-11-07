@@ -1,0 +1,9 @@
+**/target/
+/build/
+__pycache__/
+*.pyc
+*.pbm
+*.uf2
+*.hex
+*.vil
+*.log

@@ -1,0 +1,7 @@
+[target.thumbv7em-none-eabihf]
+linker = "rust-lld"
+[build]
+target = "thumbv7em-none-eabihf"
+[env]
+DEFMT_LOG = "info"
+KEYBOARD_TOML_PATH = { value = "keyboard.toml", relative = true }

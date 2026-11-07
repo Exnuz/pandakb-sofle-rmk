@@ -1,0 +1,84 @@
+{
+  "version": "UI RC8",
+  "vial_key_override_slots": 8,
+  "brightness_levels_percent": [
+    0,
+    11,
+    22,
+    33,
+    44,
+    56,
+    67,
+    78,
+    89,
+    100
+  ],
+  "saturation_levels": [
+    0,
+    28,
+    57,
+    85,
+    113,
+    142,
+    170,
+    198,
+    227,
+    255
+  ],
+  "local_rgb_frame_ms": 25,
+  "split_rgb_change_check_ms": 20,
+  "debounce_ms": 8,
+  "new_changes": [
+    "Vial key override discovery, read/write and durable storage",
+    "Rules support layer masks and all modifier/activation options for keyboard HID keys",
+    "Keyboard HID modifiers restored when an override ends"
+  ],
+  "rmk_commit": "986017d901c7609a9a79167686524f014effa68a",
+  "builds": [
+    {
+      "file": "PandaKB_Sofle_LEFT_UI_RC8.uf2",
+      "sha256": "d0ed2d9027c326bb154289197b24e91107d1c3cc38543b813aac93274d0b6357",
+      "bytes": 984576,
+      "first_address": "0x1000",
+      "last_address": "0x79293",
+      "stack": "0x2003fc08",
+      "reset": "0x1101"
+    },
+    {
+      "file": "PandaKB_Sofle_RIGHT_UI_RC8.uf2",
+      "sha256": "d13eb270896a5c786339f5a0ef26d75d99c4200792499333612bd0e65741c910",
+      "bytes": 664064,
+      "first_address": "0x1000",
+      "last_address": "0x52023",
+      "stack": "0x2003fc08",
+      "reset": "0x1101"
+    },
+    {
+      "file": "PandaKB_Sofle_RECEIVER_UI_RC8.uf2",
+      "sha256": "270bede55abd6a9ffbf317abc950c87ef9993449a30f896d08e81e8dd4c0364e",
+      "bytes": 600576,
+      "first_address": "0x1000",
+      "last_address": "0x4a4fb",
+      "stack": "0x2003fc08",
+      "reset": "0x1101"
+    }
+  ],
+  "checks": [
+    "60 vendor matrix positions; 8 Vial layers",
+    "HEX checksums, Cortex-M vectors and UF2 payload round trip",
+    "No writes to MBR, storage, bootloader or UICR",
+    "Embedded Vial definition matches source",
+    "Storage enums and build hashes preserved",
+    "Host checks for Vial mouse codes, RGB, USB badge, palettes, display and flash persistence",
+    "Vial override wire codec, report behavior and two-page persistence under power loss"
+  ],
+  "storage_build_hash": "0x5aca212f",
+  "receiver_storage_build_hash": "0x60ebba71",
+  "lighting_flash_range": "0xE8000..0xE9FFF",
+  "key_override_flash_range": "0xEA000..0xEBFFF",
+  "compatible_halves": [
+    "UI RC7"
+  ],
+  "hardware_tested": false,
+  "flashed_by_agent": false
+}

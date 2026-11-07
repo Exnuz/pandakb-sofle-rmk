@@ -1,0 +1,15 @@
+[package]
+name = "panda-ui-host-tests"
+version = "0.1.0"
+edition = "2024"
+[dependencies]
+heapless = "0.9"
+rmk-types = {path="../../rmk-ui-core/rmk-types"}
+embedded-storage = "0.3"
+embedded-storage-async = "0.4"
+[features]
+default=["storage"]
+storage=[]
+[[bin]]
+name = "verify"
+path = "main.rs"
